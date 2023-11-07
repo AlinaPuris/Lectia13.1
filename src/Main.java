@@ -6,7 +6,7 @@ import java.util.HashSet;
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        ArrayList<String> ex1=new ArrayList<>();
+        ArrayList<String> ex1 = new ArrayList<>();
         ex1.add("Ma scol");
         ex1.add("Maninc");
         ex1.add("Adorm");
@@ -18,12 +18,14 @@ public class Main {
         ex2.add("Mama");
         System.out.println(ex2);
 
-        Map<String, String>dictionar = new HashMap<>();
+        Map<String, String> dictionar = new HashMap<>();
         dictionar.put("gheata", "ice");
         dictionar.put("foc", "fire");
         dictionar.put("apa", "water");
 
-        System.out.println(dictionar);
+        for (Map.Entry<String, String> entry : dictionar.entrySet()) {
+            System.out.println(entry.getKey() + " " + entry.getValue());
 
+        }
     }
 }
